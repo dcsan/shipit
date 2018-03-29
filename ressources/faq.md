@@ -37,6 +37,9 @@ shipit.blTask('hello', async () => {
 see https://github.com/shipitjs/shipit/issues/176
 
 ## How to run a task against multiple environments?
+This is not possible, it is by design. Environments are similar to environment variables.
+You can't do NODE_ENV=development NODE_ENV=production npm start, it is the same for Shipit.
+I suggest you to create an environment with all servers from env1 and from env2.
 
 
 ## How do I obtain the environment currently deploying
